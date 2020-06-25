@@ -1,0 +1,57 @@
+#include"stdafx.h"
+#include<stdio.h>
+#include<conio.h>
+
+//void iqra();
+//int add(int, int);
+//int square(int);
+void iqra(){
+	printf("hello iqra\n");
+}
+
+int add(int a, int b){
+
+	int ans = a + b;
+	return ans;
+
+
+
+}
+int square(int r){
+	int ans = r*r;
+	return ans;
+}
+int factorial(int b){
+
+	for (int a = b - 1; a >= 1; a--){
+		b = b*a;
+
+	}
+	return b;
+}
+
+
+void main(){
+	iqra();
+	int c, d;
+
+
+	int s = factorial(4);
+	printf("the factorial of 4 is %d", s);
+	_getch();
+
+	//printf("Enter num 1:");
+	//scanf_s("%d", &c);
+	//printf("Enter num 2:");
+	//scanf_s("%d", &d);
+
+
+	//int x = add(c, d);
+	//printf("%d", x);
+	/*int g;
+	scanf_s("%d", &g);
+	for (int i = 1; i <= g; i++){
+	int s = square(i);
+	printf("square of %d is %d\n",i, s);
+	}*/
+}

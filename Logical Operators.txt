@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int loginIdNo;
+	int passNo;
+	printf("Enter your Login ID No\n");
+	scanf_s("%d", &loginIdNo);
+	printf("Enter your Pass No\n");
+	scanf_s("%d", &passNo);
+	if(loginIdNo==1 && passNo==2)
+	{
+		printf("Login successfully\n");
+	}
+	else
+	{
+		printf("login failed\n");
+	}
+_getch();
+}

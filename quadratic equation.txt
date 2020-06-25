@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	float a;
+	float b;
+	float c;
+	float q;
+	float q1;
+	float q2;
+	printf("Enter value of a");
+	scanf_s("%f", &a);
+	printf("Enter value of b");
+	scanf_s("%f", &b);
+	printf("Enter value of c");
+	scanf_s("%f", &c);
+	q1 = -b + ((b*b) - 4 * a*c);
+	q2 = 2 * a;
+	q = q1 / q2;
+	printf("quadratic formula %f", q);
+	_getch();
+
+
+}

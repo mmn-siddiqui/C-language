@@ -1,0 +1,74 @@
+#include<stdio.h>
+#include<conio.h>
+
+void storearray(int);
+void printarray(int);
+void sumarray(int);
+void bubblesort(int);
+
+void storearray(int arr[])
+{
+	//input values from user
+	for (int i = 0; i <= 4; i++){
+		printf("\nEnter value");
+		scanf_s("%d", &arr[i]);
+	}
+}
+
+void printarray(int arr[])
+{
+	//printing values
+	for (int i = 0; i <= 4; i++){
+		printf("\nvalues are %d \t %d\n", i, arr[i]);
+	}
+}
+
+void sumarray(int arr[])
+{
+	int sum = 0; 
+	for (int i = 0; i <= 4; i++)
+	{
+		sum = sum + arr[i];
+	}
+	printf("\nsum is %d", sum);
+}
+
+
+void bubblesort(int arr[])
+{
+	for (int pass = 0; pass <= 4; pass++)
+
+	{
+		for (int i = 0; i <= 4 - 1; i++)
+		{
+			if (arr[i]> arr[i+1])
+			{
+				int temp = arr[i];
+				arr[i] = arr[i + 1];
+				arr[i + 1] = temp;
+			}
+		}
+	}
+	printf("\n\nsorted array\n\n");
+
+	printarray(arr);
+
+	/*for (int i = 0; i <= 4; i++){
+		printf("\nvalues are %d \t %d\n", i, arr[i]);
+	}*/
+}
+
+void main()
+{
+	int x[5];
+	storearray(x);
+	printarray(x);
+	sumarray(x);
+	bubblesort(x);
+	/*printf("\n\n new array");
+	int y[5];
+	storearray(y);
+	printarray(y);
+	sumarray(y);*/
+	_getch();
+}

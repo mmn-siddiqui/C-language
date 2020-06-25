@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a, sum = 0;
+	for (a = 1; a <= 15; a++)
+	{
+		printf("%d\n", a);
+		sum = a + sum;
+	}
+	printf("The sum of first 15 numbers is %d", sum);
+	_getch();
+}

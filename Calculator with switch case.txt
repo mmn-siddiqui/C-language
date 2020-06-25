@@ -1,0 +1,65 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int a, b,ans;
+	int choice;
+	do{
+		printf("1: Addition\n");
+		printf("2: Subtraction\n");
+		printf("3: Multiplication\n");
+		printf("4: Division\n");
+		printf("5: Exit\n");
+		printf("Enter your choice\n");
+		scanf_s("%d", &choice);
+		switch (choice)
+		{
+		case 1:
+			printf("Enter first no");
+			scanf_s("%d", &a);
+			printf("Enter Second no");
+			scanf_s("%d", &b);
+			ans = a + b;
+			printf("your answer is: %d\n", ans);
+			break;
+		case 2:
+
+			printf("Enter first no");
+			scanf_s("%d", &a);
+			printf("Enter Second no");
+			scanf_s("%d", &b);
+			ans = a - b;
+			printf("your answer is: %d\n", ans);
+			break;
+		case 3:
+
+			printf("Enter first no");
+			scanf_s("%d", &a);
+			printf("Enter Second no");
+			scanf_s("%d", &b);
+			ans = a * b;
+			printf("your answer is: %d\n", ans);
+			break;
+		case 4:
+
+			printf("Enter first no");
+			scanf_s("%d", &a);
+			printf("Enter Second no");
+			scanf_s("%d", &b);
+			ans = a / b;
+			printf("your answer is: %d\n", ans);
+			break;
+		default:
+			printf("wrong entry\n");
+		}
+	} while (choice!=5);
+	
+		_getch();
+	}
+
+	
+
+
+
+
+	

@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+void main()
+{
+	int arr[5] ;
+	//input values from user
+	for (int i = 0; i <= 4; i++){
+		printf("\nEnter value");
+		scanf_s("%d", &arr[i]);
+	}
+
+	//printing values
+	for (int i = 0; i <= 4; i++){
+		int square = pow(arr[i], 2);
+		int cube = pow(arr[i], 3);
+		printf("\nvalues are %d \t %d\t %d \t %d\n" ,i, arr[i], square, cube);
+	}
+
+	_getch();
+}

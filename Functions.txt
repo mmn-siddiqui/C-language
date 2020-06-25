@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+
+//function declaration
+void iqra();
+int add(int, int);
+
+//fuction defination
+void iqra(void){
+	printf("Hello Iqra\n");
+}
+
+int add(int a,int b)
+{
+	int ans = a + b;
+	return ans;
+}
+void main()
+{
+	//function invoking
+	iqra();
+	iqra();
+	iqra();
+    printf("hi\n");
+	//call by value
+    int x=add(2,3);
+	printf("\nAnswer is: %f", x);
+	//add(4,5);
+	//int num1, num2;
+	//printf("\nEnter num1");
+	//scanf_s("%d", &num1);
+	//printf("\nEnter num2");
+	//scanf_s("%d", &num2);
+	////call by reference
+	//add(num1,num2);
+	//printf("\n end functions");
+	_getch();
+}

@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	/*Set total to zero
+	Set grade counter to one
+		While grade counter is less than or equal to ten
+		Input the next grade
+		Add the grade into the total
+		Add one to the grade counter
+		Set the class average to the total divided by ten
+		Print the class average*/
+	int total = 0;
+	int gc = 1;
+	int grade;
+	while (gc <= 10)
+	{
+		printf("Enter grade");
+		scanf_s("%d", &grade);
+		total = total + grade;
+		gc++;
+
+	}
+	int average = total / 10;
+	printf("average of 10 students grade is %d", average);
+
+	_getch();
+
+}

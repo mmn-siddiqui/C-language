@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+
+
+void main()
+{
+	int t,s,e;
+	printf("Enter table no");
+	scanf_s("%d", &t);
+	printf("Enter Starting range");
+	scanf_s("%d", &s);
+	printf("Enter ending range");
+	scanf_s("%d", &e);
+	int x = s;
+	do
+	{
+		printf("%d*%d=%d\n", t, x, t*x);
+		x++;
+	} while (x <= e);
+	
+
+
+	_getch();
+
+}

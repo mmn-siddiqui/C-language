@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int a, b, c, d;
+	a = 2, b = 3, c = 4, d = 5;
+	printf("Arithmetic operators:\n");
+	printf("Addition is %d\n", a+b);
+	printf("Subtraction is %d\n", a - b);
+	printf("Multiplication is %d\n", a * b);
+	printf("Division is %d\n", c / a);
+
+	printf("\nConditional operators:\n");
+	printf("Less than is %d\n", a<b);
+	printf("Greater than is %d\n", a>b);
+	printf("Less than equal is %d\n", a<=b);
+	printf("Greater than equal is %d\n", a>=b);
+
+	printf("\nAssignment operators:\n");
+	printf("addition assignment is %d\n", a+=3);
+	printf("subtraction assignment is %d\n", a-=3);
+	printf("multiplication assignment is %d\n", a*=3);
+	printf("Division assignment is %d\n", a/=3);
+
+	printf("\nInc and Dec operators:\n");
+	printf("pre inc is %d\n" ,++a );
+	printf("pre dec is %d\n", --a);
+	printf("post inc is %d\n",a++);
+	printf("post dec is %d\n",a--);
+
+	
+	_getch();
+}

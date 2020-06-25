@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int totalMarks;
+	printf("Enter your total marks");
+	scanf_s("%d", &totalMarks);
+
+	if (totalMarks>=90)
+	{
+		printf("A+ Grade");
+	}
+	else if (totalMarks>=80)
+	{
+		printf("A Grade");
+	}
+	else if (totalMarks >= 70)
+	{
+		printf("B Grade");
+	}
+	else if (totalMarks >= 60)
+	{
+		printf("C Grade");
+	}
+	else if (totalMarks >= 50)
+	{
+		printf("D Grade");
+	}
+	else if (totalMarks >= 40)
+	{
+		printf("E Grade");
+	}
+	else
+	{
+		printf("F grade");
+	}
+
+_getch();
+}

@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+//function declaration
+int fibonacci(int);
+
+//function defination
+int fibonacci(int n){
+	if (n == 0 || n == 1)
+	{
+		return n;
+	}
+	else
+	{
+		return fibonacci(n - 1) + fibonacci(n - 2);
+	}
+		
+}
+
+void main()
+{
+	int f;
+	printf("Enter position value ");
+	scanf_s("%d", &f);
+printf("Answer is %d ", fibonacci(f));
+	_getch();
+}

@@ -1,0 +1,41 @@
+#include <stdio.h>
+int main ()
+{
+	float pie = 3.143;
+	char selection;	
+
+	printf ("Choose the operation.\n");
+	printf ("1. Area of Circle (press c)\n");
+	printf ("2. Area of Rectangle (press r)\n");
+	printf ("3. Area of Triangle (press t)\n");
+	scanf ("%c",&selection);
+	if (selection == 'c'){
+		float r;
+		printf ("Enter the value of radius:");
+		scanf ("%f",&r);
+		printf ("\nThe area of circle is %f",r*r*pie);
+	}
+	else if(selection == 'r') {
+		float l,w;
+		printf ("Enter the length of rectangle:");
+		scanf ("%f",&l);
+		printf ("\nEnter the weidth of rectangle:");
+		scanf ("%f",&w);
+		printf ("\nThe area of rectangle is %f",l*w);
+	}
+	else if (selection == 't'){
+		float b,h;
+		
+		printf ("Enter the base of triangle:");
+		scanf ("%f",&b);
+		printf ("\nEnter the height of triangle:");
+		scanf ("%f",&h);
+		printf ("\nThe area of triangle is %f",(0.5)*b*h);
+	}
+	else {
+		printf ("Selection is Wrong. Go back again :)");
+	}
+
+ 
+	
+}

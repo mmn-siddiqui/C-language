@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+
+//function declaration
+int power(int, int);
+
+//fuction defination
+int power(int b,int p)
+{
+	int result=1;
+	for (int i =1 ; i <= p; i++)
+	{
+		result =result*b;
+	}
+	return result;
+
+}
+
+
+void main()
+{
+	int y = power(5,2);
+	printf("%d", y);
+	
+
+	_getch();
+}

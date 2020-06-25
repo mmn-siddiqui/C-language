@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int num1;
+	int num2;
+	printf("Enter num1");
+	scanf_s("%d", &num1);
+	printf("Enter num2");
+	scanf_s("%d", &num2);
+	if (num1!=num2)
+	{
+		printf("%d and %d are not equal\n",num1,num2);
+		if (num1>num2)
+		{
+			printf("%d is greater than %d",num1,num2);
+		}
+		else
+		{
+			printf(" %d is greater than %d",num2,num1);
+		}
+	}
+	else
+	{
+		printf("num1 and num2 are  equal");
+	}
+
+_getch();
+}

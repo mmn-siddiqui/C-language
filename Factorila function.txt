@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+//function declaration
+int factorial(int);
+
+//fuction defination
+int factorial(int n)
+{
+	int fact=1;
+	for (int i =1 ; i <= n; i++)
+	{
+		fact =fact*i;
+	}
+	return fact;
+
+}
+
+
+void main()
+{
+
+	for (int i = 5; i <= 10; i++)
+	{
+		int f = factorial(i);
+		printf("\nfactorial of %d is %d ",i, f);
+	}
+	
+	_getch();
+}

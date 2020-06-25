@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int total = 0;
+    int grade=0;
+    int i = 0;
+    while (grade!=-1)
+    {
+
+        printf("Enter Your Grade : ");
+        scanf_s("%d", &grade);
+        if (grade!=-1)
+        {
+            total = total + grade;
+            i++;
+        }
+    
+    }
+
+        float avg = total / i;
+        printf("the total average of the given values are : %f", avg);
+    
+    _getch();
+}

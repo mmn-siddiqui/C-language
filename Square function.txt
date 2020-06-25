@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+
+//function declaration
+int square(int);
+
+//fuction defination
+
+int square(int r)
+{
+	int ans = r*r;
+	return ans;
+}
+void main()
+{
+	for (int i = 1; i <= 4; i++)
+	{
+		int s = square(i);
+		printf("\nsquare of %d is %d ",i, s);
+	}
+	
+	_getch();
+}

@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+	int age;
+	printf("Enter your age\n");
+	scanf_s("%d",&age);
+	//Ternary operator
+	printf("%s\n", age >= 18 ? "Eligible":"Not Eligible");
+_getch();
+}
